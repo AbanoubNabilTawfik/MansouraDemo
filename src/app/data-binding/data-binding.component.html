@@ -1,0 +1,39 @@
+<p>data-binding works!</p>
+
+<h1>Interpolation</h1>
+<br>
+{{2+3*7}}
+<br>
+{{fullName}}
+<br>
+{{"Welcome "+ fullName}}
+<br>
+{{fullName.length}}
+<br>
+{{fullName.toUpperCase()}}
+<br>
+<!-- {{window.location.href}} -->
+{{url}}
+
+<br>
+<h1>Property Binding</h1>
+<input type="text" id="{{txtId}}"/>
+
+<button disabled="{{isDisabled}}" >Submit</button>
+
+<button [disabled]="isDisabled" >Submit</button>
+
+<br>
+<h2 class="text-success">Welcome to ITI</h2>
+<br>
+<h2 [class]="className">Welcome to ITI</h2>
+<br>
+<h2 [class.text-danger]="hasError">Welcome to ITI</h2>
+<br>
+<h2 [ngClass]="messageClasses">Welcome to ITI</h2>
+<br>
+<h2 [style.color]="'red'">Welcome Mansoura Branch</h2>
+<br>
+<h2 [style.color]="hasError ? 'red' : 'green'">Welcome to ITI </h2>
+<br>
+<h2 [ngStyle]="myStyle">Welcome to ITI</h2>
