@@ -1,0 +1,47 @@
+<p>pipes works!</p>
+{{fullName}}
+<br>
+{{fullName | lowercase}}
+<br>
+{{fullName |uppercase}}
+<br>
+{{fullName |titlecase}}
+<br>
+{{fullName | slice:3}}
+<br>
+{{fullName | slice :3:5}}
+--------------------------------------
+<br>
+{{2.678 |number:'1.2-3'}}
+<br>
+{{2.678 |number :'3.1-2'}}   
+<br>
+{{2.678 |number :'3.4-5'}} 
+--------------------------------------
+<br>
+{{0.25 |currency}}
+<br>
+{{0.25 |currency :'EUR'}}
+<br>
+{{0.25 |currency :'GBP'}}
+---------------------------------------
+<br>
+{{0.25 | percent}}
+--------------------------------------
+<br>
+{{todayDate}}
+<br>
+{{todayDate |date :'short'}}
+<br>
+{{todayDate |date :'shortDate'}}
+<br>
+{{todayDate |date :'shortTime'}}
+<br>
+{{todayDate |date :'medium'}}
+<br>
+{{todayDate |date :'mediumDate'}}
+<br>
+{{todayDate |date:'mediumTime'}}
+------------------------------------------
+
+{{4 |square :2:2}}
