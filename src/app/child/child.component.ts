@@ -8,8 +8,10 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 export class ChildComponent implements OnInit {
 
   constructor() { }
+  childString:string="Rawda"
 //  @Input() 
 //   parentData:string="";
+    cars=["KIA","TIPO","FIAT"]
     @Input('parentData') fullName :string="";
 
     @Output() childEvent=new EventEmitter();
@@ -19,7 +21,7 @@ export class ChildComponent implements OnInit {
 
   fireEvent()
   {
-    this.childEvent.emit("Hello parent from child")
+    this.childEvent.emit(this.cars)
   }
 
   whoAMI()

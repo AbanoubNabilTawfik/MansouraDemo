@@ -14,13 +14,15 @@ export class ParentComponent implements OnInit {
   fullName:string="This is message from parent";
 
   dataFromChild:any;
-
+  childData:any;
   ngOnInit(): void {
     
   }
   ngAfterViewInit()
   {
     this.child.whoAMI();
+    this.childData=this.child.childString;
+    this.childData="ay 7aga"
   }
 
 }
