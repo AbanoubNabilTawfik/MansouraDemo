@@ -25,6 +25,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { DepartmentDetailsComponent } from './department-details/department-details.component';
 import { OverviewComponent } from './overview/overview.component';
 import { ContactComponent } from './contact/contact.component';
+import { AuthModule } from 'src/auth/auth.module';
+import { TdfComponent } from './tdf/tdf.component';
 
 @NgModule({
   declarations: [
@@ -48,13 +50,15 @@ import { ContactComponent } from './contact/contact.component';
     PageNotFoundComponent,
     DepartmentDetailsComponent,
     OverviewComponent,
-    ContactComponent
+    ContactComponent,
+    TdfComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]
